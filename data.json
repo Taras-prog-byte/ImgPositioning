@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "type": "test",
+      "left": "476px",
+      "top": "127px"
+    },
+    {
+      "id": 2,
+      "type": "test",
+      "left": "350px",
+      "top": "367px"
+    },
+    {
+      "id": 3,
+      "type": "test",
+      "left": "200px",
+      "top":" 30px"
+    },
+    {
+      "id": 4,
+      "type": "test",
+      "left": "600px",
+      "top": "430px"
+    },
+    {
+      "id": 5,
+      "type": "test",
+      "left": "900px",
+      "top": "130px"
+    },
+    {
+      "id": 6,
+      "type": "test",
+      "left": "130px",
+      "top": "900px"
+    }
+  ]
+}
