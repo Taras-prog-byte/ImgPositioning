@@ -2,39 +2,59 @@
   "data": [
     {
       "id": 1,
-      "type": "test",
+      "type": "flame_sensor",
       "left": "476px",
-      "top": "127px"
+      "top": "127px",
+      "status": false
     },
     {
       "id": 2,
-      "type": "test",
+      "type": "camera",
       "left": "350px",
-      "top": "367px"
+      "top": "367px",
+      "status": false
     },
     {
       "id": 3,
-      "type": "test",
+      "type": "move_sensor",
       "left": "200px",
-      "top":" 30px"
+      "top":" 30px",
+      "status": false
     },
     {
       "id": 4,
       "type": "test",
       "left": "600px",
-      "top": "430px"
+      "top": "430px",
+      "status": false
     },
     {
       "id": 5,
-      "type": "test",
+      "type": "flame_sensor",
       "left": "900px",
-      "top": "130px"
+      "top": "130px",
+      "status": false
     },
     {
       "id": 6,
-      "type": "test",
+      "type": "camera",
       "left": "130px",
-      "top": "900px"
+      "top": "900px",
+      "status": false
+    },
+    {
+      "id": 7,
+      "type": "camera",
+      "left": "110px",
+      "top": "57px",
+      "status": false
+    },
+    {
+      "id": 8,
+      "type": "move_sensor",
+      "left": "390px",
+      "top": "1320px",
+      "status": false
     }
   ]
 }

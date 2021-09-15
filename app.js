@@ -1,4 +1,5 @@
 let loadedData
+getFile('data.json')
 
 function getFile(fileName){
     let request = new XMLHttpRequest();
@@ -16,15 +17,6 @@ function parse(obj){
     imgPositioning()
 }
 
-
-
-
-getFile('data.json')
-
-
-
-
-
 function imgPositioning(){
 
     let map = document.getElementById('map')
@@ -33,15 +25,27 @@ function imgPositioning(){
 
     for (let i = 0; i < loadedData.data.length; ++i){
         // console.log(loadedData.data[i].left)
-        imgMas[i]='<div id="' + loadedData.data[i].id + '" style="position: absolute; left: '+ loadedData.data[i].left+'; top: '+ loadedData.data[i].top+';"><img src="Pictures/test.png"> data </div>'
+        let img
+
+        if (loadedData.data[i].type==='flame_sensor'){
+            img = "Pictures/flame.png"
+        }
+        else if (loadedData.data[i].type==='move_sensor'){
+            img = "Pictures/up-down.png"
+        }
+        else if (loadedData.data[i].type==='camera'){
+            img = "Pictures/video-camera.png"
+        }
+        else {
+            img = "Pictures/test.png"
+        }
+
+
+
+        imgMas[i]='<div id="' + loadedData.data[i].id + '" style="position: absolute; left: '+ loadedData.data[i].left+'; top: '+ loadedData.data[i].top+';"><img class="img" src='+img+'>'+ loadedData.data[i].status +'</div>'
     }
 
-
-
-        map.innerHTML=imgMas
-
-
-
+    map.innerHTML=imgMas;
 }
 
 
