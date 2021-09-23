@@ -7,9 +7,9 @@
 </head>
 <body>
 
-<button onclick="sensorActivation(getRandomInt())">start rnd</button>
+<button onclick="sensorActivation(getRandomInt(0,loadedData.data.length))">start rnd</button>
 <button onclick="activateAll()">activate all</button>
-<button onclick="clearAllData()">clear</button>
+<button onclick="clearAllData()">clear all</button>
 
 <div id="map">
 </div>
